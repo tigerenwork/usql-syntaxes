@@ -1,0 +1,26 @@
+{
+    "name": "usql",
+    "displayName": "USQL-Language-Support",
+    "description": "usql language support",
+    "version": "0.0.1",
+    "publisher": "Microsoft",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "usql",
+            "aliases": ["USQL", "usql"],
+            "extensions": [".usql"],
+            "configuration": "./usql.configuration.json"
+        }],
+        "grammars": [{
+            "language": "usql",
+            "scopeName": "source.sql",
+            "path": "./syntaxes/sql.tmLanguage"
+        }]
+    }
+}
